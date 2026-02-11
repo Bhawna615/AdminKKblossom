@@ -1,0 +1,132 @@
+/* ===============================
+   INNER VIEW AREA
+================================*/
+.innerview {
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ===============================
+   FORM BOX
+================================*/
+.form-box {
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  box-shadow: 0px 1px 4px rgba(0,0,0,0.1);
+}
+
+/* ===============================
+   TITLE BAR
+================================*/
+.title-bar {
+  background: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* ===============================
+   LABEL TEXT
+================================*/
+.details {
+  font-family: Rubik-Regular;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+/* ===============================
+   INPUT FIELDS
+================================*/
+.form-input,
+.form-select {
+  border: 1px solid;
+    border-color: #A1A1A1;
+    font-family: Questrial-Regular;
+    outline: none;
+    width: 90%;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+.form-input:focus,
+.form-select:focus {
+  border-color: #2c56bb;
+  outline: none;
+  box-shadow: 0 0 3px rgba(44,86,187,0.3);
+}
+
+/* ===============================
+   SUCCESS BAR
+================================*/
+.success-bar {
+  background: #d4edda;
+  border: 1px solid #28a745;
+  color: #155724;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+/* ===============================
+   ERROR BAR
+================================*/
+.invalid-bar {
+  background: #f8d7da;
+  border: 1px solid #dc3545;
+  color: #721c24;
+  padding: 5px 8px;
+  margin-top: 4px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+/* ===============================
+   SUBMIT BUTTON
+================================*/
+.form-submit {
+  background: #2c56bb;
+  color: white;
+  border: none;
+  padding: 10px 35px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-submit:hover {
+  background: #1f3f8a;
+}
+
+/* ===============================
+   GRID FIX FOR COL-MD-4
+================================*/
+.col-md-4 {
+  float: left;
+  width: 33.33%;
+}
+
+.col-md-12 {
+  width: 100%;
+  float: left;
+}
+
+/* CLEAR FIX */
+.form-box::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ===============================
+   DATEPICKER FIX
+================================*/
+.react-datepicker-wrapper {
+  width: 95%;
+}
+
+.react-datepicker__input-container input {
+  width: 95%;
+}

@@ -1,0 +1,115 @@
+/* PAGE BACKGROUND — scoped ONLY to login page */
+.login-wrapper {
+  background: #ffae10;
+  min-height: 120vh;
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* LOGO */
+.logo {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* LOGIN CARD */
+.login-card {
+  width: 400px;
+  margin: 35px auto;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 50px 20px 0px;
+  position: relative;
+}
+
+/* TITLE */
+.login-title {
+  background: white;
+  color: #ffae10;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 5px 25px;
+  font-size: 18px;
+  text-transform: uppercase;
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* FORM */
+.login-card form {
+  padding-top: 30px;
+}
+
+/* INPUT FIELDS */
+.login-card input {
+  background: transparent;
+  font-size: 20px;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  margin-bottom: 30px;
+  width: 90%;
+  padding: 8px 5px;
+}
+
+/* REMOVE FOCUS BOX */
+.login-card input:focus {
+  outline: none;
+  background: transparent;
+}
+
+/* PLACEHOLDER */
+.login-card input::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+/* AUTOFILL FIX */
+.login-card input:-webkit-autofill,
+.login-card input:-webkit-autofill:hover,
+.login-card input:-webkit-autofill:focus,
+.login-card input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #ffae10 inset !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* LOGIN BUTTON */
+.LogIn-btn {
+  font-family: Nunito_Regular;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 25px;
+  background: #FFAE10;
+  font-size: 20px;
+  margin-top: 40px;
+  position: relative;
+  top: 15px;
+  cursor: pointer;
+}
+
+/* ERROR BAR */
+.invalid-bar {
+  color: white;
+  border: 1px solid white;
+  padding: 8px;
+  margin: 10px auto 0;
+  width: 90%;
+  text-align: center;
+}
+
+/* TERMS & FOOTER */
+.terms {
+  font-size: 18px !important;
+}
+
+.terms,
+.footer {
+  color: white;
+  margin-top: 20px;
+  font-size: 16px;
+}
