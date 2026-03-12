@@ -1,0 +1,61 @@
+.print-container {
+  padding: 30px;
+  font-family: Nunito_regular;
+}
+
+.school-name-container {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.school-logo {
+  width: 90px;
+}
+
+.school-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.school-address {
+  font-size: 14px;
+}
+
+.class-title {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+ 
+}
+
+.student-table th {
+  background: #ebebec;
+  border: 1px solid #c5c5c5;
+  text-transform: uppercase;
+}
+
+.student-table td {
+  border: 1px solid #c5c5c5;
+}
+.student-table th,
+.student-table td {
+  padding: 8px 10px;   /* 👈 andar ka gap */
+  font-size: 14px;
+ 
+}
+
+.icon {
+  width: 80px;
+}
+
+.export-btn {
+  background: #f95555;
+  color: white;
+  border: none;
+  padding: 6px 25px;
+  margin-top: 20px;
+}

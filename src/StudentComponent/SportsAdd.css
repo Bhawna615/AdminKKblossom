@@ -1,0 +1,80 @@
+/* Container */
+.innerview {
+  padding: 25px;
+}
+
+/* Field wrapper */
+.col-md-4 {
+  margin-bottom: 12px;   /* gap kam */
+   /* padding-right: 12px; */
+  /* padding-left: 25px; */
+}
+.gap{
+    display: flex;
+    gap: 40px; 
+  
+
+}
+/* Label */
+.details {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* INPUT FIELDS */
+.form-input {
+  width: 100%;              /* width bada */
+  height: 38px;             /* height thodi zyada */
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: 0.2s ease-in-out;
+}
+
+.form-input:focus {
+  border-color: #2c7be5;
+  box-shadow: 0 0 0 2px rgba(44, 123, 229, 0.15);
+  outline: none;
+}
+
+/* BUTTON */
+.form-submit {
+  margin-top: 15px;
+  width: 180px;             /* button thoda wide */
+  height: 45px;
+  background: linear-gradient(135deg, #2c7be5, #1a5fd0);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.form-submit:hover {
+  background: linear-gradient(135deg, #1a5fd0, #154bb3);
+  transform: translateY(-1px);
+}
+
+/* SUCCESS & ERROR */
+.success-bar,
+.error-bar {
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.success-bar {
+  background: #e6f4ea;
+  color: #1e7e34;
+}
+
+.error-bar {
+  background: #fdecea;
+  color: #c82333;
+}

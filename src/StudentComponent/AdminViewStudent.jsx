@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "./viewStudent.css";
+import "./AdminViewStudent.css";
 
-const API_BASE = "http://192.168.1.6/kkblossom/api.php";
+const API_BASE = "http://localhost/kkblossom/api.php";
 
-const ViewStudent = () => {
+const AdminViewStudent = () => {
   const [students, setStudents] = useState([]);
   const [classes, setClasses] = useState([]);
   const [selectedClass, setSelectedClass] = useState("");
@@ -220,4 +220,4 @@ const ViewStudent = () => {
   );
 };
 
-export default ViewStudent;
+export default AdminViewStudent;

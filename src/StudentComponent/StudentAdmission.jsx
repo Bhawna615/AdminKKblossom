@@ -37,7 +37,7 @@ const StudentAdmission = () => {
   =============================== */
   useEffect(() => {
     axios
-      .get("http://192.168.1.6/kkblossom/api.php/AdminStudent/classes")
+      .get("http://localhost/kkblossom/api.php/Adminapi/AdminStudent/classes")
       .then((res) => {
         setClasses(Array.isArray(res.data) ? res.data : []);
       })
@@ -75,7 +75,7 @@ const StudentAdmission = () => {
 
     try {
       const res = await axios.post(
-        "http://192.168.1.6/kkblossom/api.php/AdminStudent/enroll",
+        "http://localhost/kkblossom/api.php/Adminapi/AdminStudent/enroll",
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
       );

@@ -1,0 +1,166 @@
+/* ===== MAIN WRAPPER ===== */
+.innerview {
+    background: #fff;
+    padding: 20px;
+    min-height: 100vh;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Create button bar position */
+.side-btn-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -10px;     /* 👈 thoda upar */
+  margin-bottom: 25px;  /* 👈 table se gap */
+}
+.side-btn {
+  padding: 9px 18px;
+}
+
+/* ===== MESSAGE ===== */
+.message {
+    margin-bottom: 15px;
+}
+
+/* ===== FILTER BAR ===== */
+.filter-bar {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.filter-enable {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.custom-checkbox {
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.filter-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.filter-title i {
+    margin-right: 5px;
+}
+
+/* ===== FILTER SELECT ===== */
+.filter {
+    width: 85%;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* ===== VIEW METRICS BUTTON ===== */
+.form-submit {
+    background: #007bff;
+    border: none;
+    color: #fff;
+    padding: 7px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.form-submit:hover {
+    background: #0056b3;
+}
+
+/* ===== TABLE ===== */
+.dataTableFull {
+    width: 85%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+.dataTableHead {
+    background: #f2f2f2;
+}
+
+.dataTableHead th {
+    padding: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+.dataTableBody td {
+    padding: 8px 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+}
+
+.dataTableBody tr:hover {
+    background: #fafafa;
+}
+
+/* ===== DATATABLE HEADER ===== */
+.dt-head {
+    display: block;
+    width: 85%;
+    background: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* header cells border */
+.rdt_TableHeadRow {
+    border-bottom: 2px solid #0056b3;
+}
+
+/* ===== DATATABLE BODY BORDER ===== */
+.rdt_TableRow {
+    border-bottom: 1px solid #ddd;
+}
+
+/* table outer border */
+.rdt_Table {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+/* ===== METRICS BUTTON ===== */
+.dt-action-btn {
+    background: #17a2b8;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.dt-action-btn:hover {
+    background: #117a8b;
+}
+
+.btn-icon {
+    font-size: 15px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .filter-bar .col-md-4 {
+        margin-bottom: 10px;
+    }
+
+    .form-submit {
+        float: none !important;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
