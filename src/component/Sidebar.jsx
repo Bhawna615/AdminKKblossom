@@ -2,20 +2,18 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
-  const [activeMenu, setActiveMenu] = useState(""); // Currently expanded main menu
-  const [activeSubMenu, setActiveSubMenu] = useState(""); // Currently selected submenu
+  const [activeMenu, setActiveMenu] = useState("");
+  const [activeSubMenu, setActiveSubMenu] = useState("");
   const navigate = useNavigate();
 
   const menuItems = [
-    { 
-      icon: "la-graduation-cap", 
+    {
+      icon: "la-graduation-cap",
       label: "Students",
       subMenu: [
         { label: "New Admission", icon: "las la-plus-square" },
         { label: "View Students", icon: "la-eye" },
         { label: "List of Students", icon: "las la-list-ol" },
-        { label: "Check In/Out", icon: "las la-arrow-circle-right" },
-        { label: "Log Book", icon: "la-book" },
         { label: "Promote Students", icon: "las la-redo" },
         { label: "Metrics", icon: "las la-hospital-symbol" },
         { label: "Sports", icon: "las la-basketball-ball" },
@@ -24,8 +22,8 @@ const Sidebar = () => {
         { label: "Leave Requests", icon: "las la-basketball-ball" },
       ]
     },
-    { 
-      icon: "la-chalkboard-teacher", 
+    {
+      icon: "la-chalkboard-teacher",
       label: "Teachers",
       subMenu: [
         { label: "Add Teacher", icon: "las la-plus-square" },
@@ -34,8 +32,8 @@ const Sidebar = () => {
         { label: "Experience Certificates", icon: "las la-sign-out-alt" },
       ]
     },
-    { 
-      icon: "la-list-alt", 
+    {
+      icon: "la-list-alt",
       label: "Attendance",
       subMenu: [
         { label: "Mark Attendance", icon: "las la-check-square" },
@@ -43,8 +41,8 @@ const Sidebar = () => {
         { label: "Attendance Sheet", icon: "las la-file-alt" },
       ]
     },
-    { 
-      icon: "la-calendar", 
+    {
+      icon: "la-calendar",
       label: "Schedule",
       subMenu: [
         { label: "View Timetable", icon: "las la-eye" },
@@ -53,8 +51,8 @@ const Sidebar = () => {
         { label: "Events", icon: "las la-calendar-check" },
       ]
     },
-    { 
-      icon: "la-bus", 
+    {
+      icon: "la-bus",
       label: "Transport",
       subMenu: [
         { label: "Active Routes", icon: "las la-spinner" },
@@ -64,8 +62,8 @@ const Sidebar = () => {
         { label: "Station", icon: "las la-user-tie" },
       ]
     },
-    { 
-      icon: "la-tachometer-alt", 
+    {
+      icon: "la-tachometer-alt",
       label: "Exams",
       subMenu: [
         { label: "New Exam", icon: "las la-plus-square" },
@@ -78,8 +76,8 @@ const Sidebar = () => {
         { label: "Custom Report Card", icon: "las la-paperclip" },
       ]
     },
-    { 
-      icon: "la-edit", 
+    {
+      icon: "la-edit",
       label: "Homework",
       subMenu: [
         { label: "Assign Homework", icon: "las la-list-ul" },
@@ -87,8 +85,8 @@ const Sidebar = () => {
         { label: "Assignment Generator", icon: "las la-cog" },
       ]
     },
-    { 
-      icon: "la-user-tie", 
+    {
+      icon: "la-user-tie",
       label: "Employee",
       subMenu: [
         { label: "View Employee", icon: "la-eye" },
@@ -97,8 +95,8 @@ const Sidebar = () => {
         { label: "Attendance Sheet", icon: "las la-file-alt" },
       ]
     },
-    { 
-      icon: "la-rupee-sign", 
+    {
+      icon: "la-rupee-sign",
       label: "Fee",
       subMenu: [
         { label: "Fee Structure", icon: "las la-project-diagram" },
@@ -109,15 +107,13 @@ const Sidebar = () => {
         { label: "Statistics", icon: "las la-chart-pie" },
       ]
     },
-    { 
-      icon: "la-walking", 
+    {
+      icon: "la-walking",
       label: "Visitor Management",
-      subMenu: [
-        { label: "Log Book", icon: "las la-book" },
-      ]
+      subMenu: [{ label: "Log Book", icon: "las la-book" }]
     },
-    { 
-      icon: "la-sms", 
+    {
+      icon: "la-sms",
       label: "Messaging",
       subMenu: [
         { label: "In-App Messaging", icon: "las la-mobile" },
@@ -126,8 +122,8 @@ const Sidebar = () => {
       ]
     },
     { icon: "la-rss", label: "Posts" },
-    { 
-      icon: "la-info-circle", 
+    {
+      icon: "la-info-circle",
       label: "More",
       subMenu: [
         { label: "Terms & Conditions", icon: "las la-file-alt" },
@@ -142,32 +138,77 @@ const Sidebar = () => {
   };
 
   const handleSubMenuClick = (subLabel) => {
-  setActiveSubMenu(subLabel);
+    setActiveSubMenu(subLabel);
 
-  switch (subLabel) {
-    case "New Admission":
-      navigate("/dashboard/StudentComponent/StudentAdmission");
-      break;
+    switch (subLabel) {
+      case "New Admission":
+        navigate("/dashboard/StudentComponent/StudentAdmission");
+        break;
 
-    case "View Students":
-      navigate("/dashboard/StudentComponent/viewStudent");
-      break;
- case "SLCs":
-      navigate("/dashboard/StudentComponent/ViewTransferredStudents");
-      break;
-case "Character Certificates":
-      navigate("/dashboard/StudentComponent/DisplayCharacterCertificates");
-      break;
+      case "View Students":
+        navigate("/dashboard/StudentComponent/AdminViewStudent");
+        break;
+
+      case "List of Students":
+        navigate("/dashboard/StudentComponent/AdminListStudent");
+        break;
+
+      case "Promote Students":
+        navigate("/dashboard/StudentComponent/StudentPromote");
+        break;
+
+      case "Metrics":
+        navigate("/dashboard/StudentComponent/StudentMetrics");
+        break;
+
+      case "Sports":
+        navigate("/dashboard/StudentComponent/StudentSports");
+        break;
+
+      case "SLCs":
+        navigate("/dashboard/StudentComponent/ViewTransferredStudents");
+        break;
+
+      case "Character Certificates":
+        navigate("/dashboard/StudentComponent/DisplayCharacterCertificates");
+        break;
+
       case "Leave Requests":
-      navigate("/dashboard/StudentComponent/DisplayLeaveRequests");
-      break;
+        navigate("/dashboard/StudentComponent/DisplayLeaveRequests");
+        break;
+
       case "Add Teacher":
         navigate("/dashboard/TeacherComponent/AddTeachers");
-    default:
-      break;
-  }
-};
+        break;
 
+      case "View Teachers":
+        navigate("/dashboard/TeacherComponent/ViewTeachers");
+        break;
+
+      case "Former Teachers":
+        navigate("/dashboard/TeacherComponent/FormerTeachers");
+        break;
+
+      case "Experience Certificates":
+        navigate("/dashboard/TeacherComponent/ExperienceCertificate");
+        break;
+
+      case "Mark Attendance":
+        navigate("/dashboard/AttendanceComponent/MarkAttendance");
+        break;
+
+      case "View Attendance":
+        navigate("/dashboard/AttendanceComponent/ViewAttendance");
+        break;
+
+      case "Attendance Sheet":
+        navigate("/dashboard/AttendanceComponent/RollCall");
+        break;
+
+      default:
+        break;
+    }
+  };
 
   return (
     <nav className="sidebar" aria-label="Main Sidebar Navigation">

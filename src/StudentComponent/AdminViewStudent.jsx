@@ -1,9 +1,15 @@
 import React, { useEffect, useState, useMemo } from "react";
 import axios from "axios";
+<<<<<<< HEAD:src/StudentComponent/viewStudent.jsx
 import "./viewStudent.css";
 import { useNavigate } from "react-router-dom";
+=======
+import "./AdminViewStudent.css";
 
-const ViewStudent = () => {
+const API_BASE = "http://localhost/kkblossom/api.php";
+>>>>>>> 880541a470586e40f9863f354d866ad22706c842:src/StudentComponent/AdminViewStudent.jsx
+
+const AdminViewStudent = () => {
   const [students, setStudents] = useState([]);
   const [search, setSearch] = useState("");
   const [entries, setEntries] = useState(10);
@@ -367,4 +373,4 @@ const [errorMessage, setErrorMessage] = useState("");
   );
 };
 
-export default ViewStudent;
+export default AdminViewStudent;
