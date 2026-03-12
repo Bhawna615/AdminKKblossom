@@ -26,7 +26,7 @@ const AdminLogin = () => {
 
     try {
       const response = await fetch(
-        "http://192.168.1.6/kkblossom/api.php/AdminAuth/signIn",
+        "http://localhost/kkblossom/api.php/Adminapi/AdminAuth/login",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

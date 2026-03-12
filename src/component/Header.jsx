@@ -12,7 +12,7 @@ const navigate = useNavigate();
   const handleLogout = async () => {
   try {
     const response = await fetch(
-      "http://192.168.1.6/kkblossom/api.php/AdminAuth/signOut",
+      "http://localhost/kkblossom/api.php/Adminapi/AdminAuth/signOut",
       {
         method: "GET",
         credentials: "include", // send PHP session cookies

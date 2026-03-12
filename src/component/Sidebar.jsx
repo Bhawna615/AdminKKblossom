@@ -146,13 +146,23 @@ const Sidebar = () => {
 
   switch (subLabel) {
     case "New Admission":
-      navigate("/dashboard/students/admission");
+      navigate("/dashboard/StudentComponent/StudentAdmission");
       break;
 
     case "View Students":
-      navigate("/dashboard/students/view-student");
+      navigate("/dashboard/StudentComponent/viewStudent");
       break;
-
+ case "SLCs":
+      navigate("/dashboard/StudentComponent/ViewTransferredStudents");
+      break;
+case "Character Certificates":
+      navigate("/dashboard/StudentComponent/DisplayCharacterCertificates");
+      break;
+      case "Leave Requests":
+      navigate("/dashboard/StudentComponent/DisplayLeaveRequests");
+      break;
+      case "Add Teacher":
+        navigate("/dashboard/TeacherComponent/AddTeachers");
     default:
       break;
   }
